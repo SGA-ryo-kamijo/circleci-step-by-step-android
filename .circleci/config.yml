@@ -7,11 +7,11 @@ jobs:
     steps:
       - checkout
       - run: echo $CIRCLE_JOB
-        name: Single command -  echo
-        command: echo $CIRCLE_USERNAME
-      - run:
-        name: Multi-line commands - echo & echo
-        command: |
-          echo $CIRCLE_REPOSITORY_URL
-          echo $CIRCLE_BRANCH
-            
+      - run: 
+          name: Single command -  echo
+          command: echo $CIRCLE_USERNAME
+      - run: 
+          name: Muti-line commands - echo & echo
+          command: |
+            echo $CIRCLE_REPOSITORY_URL
+            echo $CIRCLE_BRANCH
